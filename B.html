@@ -63,14 +63,11 @@ n.type="text/javascript",n.async=o.async,s.parentNode.insertBefore(n,s),n.src=o.
     }(window,document,"Smooch","5a8ad12984f1e70022d94d86");
 </script>
 <script>
-    Smooch.init({ 
-            appID: '5a8ad12984f1e70022d94d86',
-            customText: {
-                headerText: 'Let\'s chat',
-            }
+    Smooch.init({appId: '5a8ad12984f1e70022d94d86'}).then(function() {
+     
     });
 </script>
-<script>
+<script>     
   (()=>{window.onhashchange = ()=>{if(document.location.hash.indexOf("sm") != -1){Smooch.open();}}})()
 </script>
 </head>
