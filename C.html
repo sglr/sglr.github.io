@@ -34,7 +34,7 @@
                 var url = getActiveURL();
                 var frame = document.createElement("iframe");
                 frame.id = "frameContainer";
-                frame.src = url.substr(1, url.length);
+                frame.src = url.substr(0, url.length);
                 document.body.appendChild(frame);
             } else {
                 setTimeout(function () {
