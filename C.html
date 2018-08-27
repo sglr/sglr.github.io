@@ -31,10 +31,9 @@
     <script type="text/javascript">
         (function onBodyReady() {
             if (document.body) {
-                var url = getActiveURL();
                 var frame = document.createElement("iframe");
                 frame.id = "frameContainer";
-                frame.src = url.substr(0, url.length);
+                frame.src = getActiveURL();
                 document.body.appendChild(frame);
             } else {
                 setTimeout(function () {
