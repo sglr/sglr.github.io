@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Signalayer Container</title>
+<meta name="description" content="The easiest way for marketer to add a popup on the site">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Signalayer">
+<meta property="og:title" content="Signalayer Container">
+<meta property="og:image" content="https://signalayer.com/images/Webclip.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type='text/javascript' src="data2.js"></script>  
+<style>
+        #frameContainer {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            border: 0;
+            height: 100%;
+            min-width: 100%;
+            width: 100%;
+            -webkit-overflow-scrolling: touch;
+            overflow-x: auto;
+        }
+    #sk-holder #sk-messenger-button {
+            right: 40px !important;
+        }
+    #sk-container #sk-wrapper .sk-logo {
+    display: none;
+        }
+    #sk-container #sk-wrapper .sk-intro-section {
+    display: none;
+        }
+    </style>
+
+    <script type="text/javascript">
+        (function onBodyReady() {
+            if (document.body) {
+                var frame = document.createElement("iframe");
+                frame.id = "frameContainer";
+                frame.src = getActiveURL();
+                document.body.appendChild(frame);
+            } else {
+                setTimeout(function () {
+                    onBodyReady();
+                }, 200);
+            }
+        })();
+    </script>
+<!--- Tooltip player -->
+<script type='text/javascript'>
+window.Tooltip||function(t,e){var o={
+url:"https://cdn.signalayer.com/static/player.js",
+key:"TMTWhi9Oh89c2klYgCP84xuWSY-yoRR46JjypXEtIr0",
+async:true
+};
+window.Tooltip={cs:[],_apiKey:o.key};for(
+var r=["identify","goal","updateUserData","start","stop","refresh","show","hide","on"],
+i={},n=0;n<r.length;n++){var a=r[n];i[a]=function(t){return function(){var e=Array.prototype.slice.call(arguments);
+window.Tooltip.cs.push({method:t,args:e})}}(a)}window.Tooltip.API=i;var n=t.createElement(e),s=t.getElementsByTagName(e)[0];
+n.type="text/javascript",n.async=o.async,s.parentNode.insertBefore(n,s),n.src=o.url}(document,"script");
+</script>
+<!--- Tooltip player -->
+<script>
+    !function(e,n,t,r){
+        function o(){try{var e;if((e="string"==typeof this.response?JSON.parse(this.response):this.response).url){var t=n.getElementsByTagName("script")[0],r=n.createElement("script");r.async=!0,r.src=e.url,t.parentNode.insertBefore(r,t)}}catch(e){}}var s,p,a,i=[],c=[];e[t]={init:function(){s=arguments;var e={then:function(n){return c.push({type:"t",next:n}),e},catch:function(n){return c.push({type:"c",next:n}),e}};return e},on:function(){i.push(arguments)},render:function(){p=arguments},destroy:function(){a=arguments}},e.__onWebMessengerHostReady__=function(n){if(delete e.__onWebMessengerHostReady__,e[t]=n,s)for(var r=n.init.apply(n,s),o=0;o<c.length;o++){var u=c[o];r="t"===u.type?r.then(u.next):r.catch(u.next)}p&&n.render.apply(n,p),a&&n.destroy.apply(n,a);for(o=0;o<i.length;o++)n.on.apply(n,i[o])};var u=new XMLHttpRequest;u.addEventListener("load",o),u.open("GET","https://"+r+".webloader.smooch.io/",!0),u.responseType="json",u.send()
+    }(window,document,"Smooch","5a8ad12984f1e70022d94d86");
+</script>
+<script>
+      Smooch.init({ 
+            appId: '5a8ad12984f1e70022d94d86',
+            customText: {
+                headerText: 'Let\'s chat',
+          
+            }
+    }).then(function() {
+    });
+</script>
+<script>     
+  (()=>{window.onhashchange = ()=>{if(document.location.hash.indexOf("sm") != -1){Smooch.open();}}})()
+</script>
+</head>
+<body>
+</body>
+</html>
